@@ -3,359 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Salsa Aulia Sabarani 💕</title>
+    <title>Happy Birthday, My Favorite Person! 🎂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 50%, #ff69b4 100%);
-            min-height: 100vh;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fdf6f6;
+            color: #5a4a42;
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            min-height: 100vh;
+            padding: 20px 15px;
         }
 
-        .container {
+        main {
+            max-width: 520px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 35px 25px;
+            box-shadow: 0 10px 30px rgba(220, 180, 180, 0.2);
+            border: 1px solid #f2e3e3;
+        }
+
+        section {
             text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 50px;
-            border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(255, 105, 180, 0.3);
-            max-width: 600px;
-            animation: fadeIn 1s ease-in;
+            margin-bottom: 35px;
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: #e07a5f;
+            font-style: italic;
+            margin-bottom: 8px;
         }
 
         h1 {
-            color: #ff1493;
-            font-size: 3em;
-            margin-bottom: 10px;
-            animation: bounce 1s ease-in-out infinite;
+            font-size: 1.75rem;
+            color: #3d312a;
+            line-height: 1.3;
+            margin-bottom: 12px;
+            font-weight: 700;
         }
 
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
+        h1 span {
+            color: #e07a5f;
         }
 
-        .name {
-            color: #ff69b4;
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
+        h2 {
+            font-size: 1.35rem;
+            color: #3d312a;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
 
-        .message {
-            color: #d1416b;
-            font-size: 1.3em;
-            line-height: 1.8;
-            margin: 30px 0;
-            font-style: italic;
+        p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #6c5a52;
+            margin-bottom: 14px;
         }
 
-        .cat-container {
-            margin: 40px 0;
-            position: relative;
-            height: 150px;
+        .heart-icon {
+            font-size: 1.5rem;
+            color: #e07a5f;
+            display: block;
+            margin-bottom: 5px;
         }
 
-        .cat {
-            width: 120px;
-            height: 120px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: catWalk 4s infinite;
-        }
-
-        @keyframes catWalk {
-            0% {
-                left: 10%;
-            }
-            50% {
-                left: 90%;
-            }
-            100% {
-                left: 10%;
-            }
-        }
-
-        /* Cat Body */
-        .cat-body {
+        .img-container, .video-container {
             width: 100%;
-            height: 100%;
-            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-top: 10px;
         }
 
-        .cat-head {
-            width: 50px;
-            height: 50px;
-            background: #FFB6D9;
-            border-radius: 45% 45% 50% 50%;
-            position: absolute;
-            top: 10px;
-            left: 35px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
         }
 
-        .cat-ear {
-            width: 15px;
-            height: 25px;
-            background: #FFB6D9;
-            position: absolute;
-            top: 0;
-            border-radius: 50% 50% 40% 40%;
-            box-shadow: inset -2px 2px 3px rgba(255, 105, 180, 0.5);
+        video {
+            width: 100%;
+            border-radius: 18px;
+            outline: none;
+            display: block;
         }
 
-        .cat-ear-left {
-            left: 15px;
+        footer {
+            text-align: center;
+            border-top: 1px dashed #eedada;
+            padding-top: 20px;
+            margin-top: 10px;
         }
 
-        .cat-ear-right {
-            right: 15px;
+        footer p {
+            font-size: 0.85rem;
+            color: #a08c84;
+            margin-bottom: 4px;
         }
 
-        .cat-eye {
-            width: 8px;
-            height: 12px;
-            background: #333;
-            position: absolute;
-            border-radius: 50%;
-            top: 20px;
-            animation: blink 3s infinite;
-        }
-
-        .cat-eye-left {
-            left: 20px;
-        }
-
-        .cat-eye-right {
-            right: 20px;
-        }
-
-        @keyframes blink {
-            0%, 90%, 100% {
-                height: 12px;
-            }
-            95% {
-                height: 2px;
-            }
-        }
-
-        .cat-mouth {
-            width: 20px;
-            height: 10px;
-            border: 2px solid #333;
-            border-top: none;
-            border-radius: 0 0 20px 20px;
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-        }
-
-        .cat-body-main {
-            width: 70px;
-            height: 60px;
-            background: #FFB6D9;
-            border-radius: 50% 50% 40% 40%;
-            position: absolute;
-            top: 50px;
-            left: 25px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .cat-tail {
-            width: 40px;
-            height: 8px;
-            background: #FFB6D9;
-            position: absolute;
-            bottom: 20px;
-            right: -10px;
-            border-radius: 50%;
-            transform: rotate(-30deg);
-            animation: tailWag 0.6s infinite;
-            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-        }
-
-        @keyframes tailWag {
-            0%, 100% {
-                transform: rotate(-30deg);
-            }
-            50% {
-                transform: rotate(10deg);
-            }
-        }
-
-        .heart {
-            position: absolute;
-            color: #ff1493;
-            font-size: 2em;
-            animation: float 3s infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0) translateX(0);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100px) translateX(30px);
-                opacity: 0;
-            }
-        }
-
-        .heart1 {
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .heart2 {
-            left: 50%;
-            animation-delay: 0.5s;
-        }
-
-        .heart3 {
-            right: 10%;
-            animation-delay: 1s;
-        }
-
-        .footer {
-            margin-top: 40px;
-            color: #ff69b4;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
-
-        .sparkle {
-            display: inline-block;
-            color: #ff1493;
-            animation: sparkleAnim 1.5s infinite;
-            margin: 0 5px;
-        }
-
-        @keyframes sparkleAnim {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 40px;
-            background: linear-gradient(135deg, #ff1493, #ff69b4);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
-            border: none;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(255, 105, 180, 0.4);
+        footer .name {
+            font-weight: 700;
+            color: #e07a5f;
         }
     </style>
 </head>
 <body>
-    <div class="heart heart1">💕</div>
-    <div class="heart heart2">💕</div>
-    <div class="heart heart3">💕</div>
 
-    <div class="container">
-        <h1>Happy Birthday</h1>
-        <div class="name">Salsa Aulia Sabarani</div>
+    <main>
+        <!-- BAGIAN 1: HEADER -->
+        <section>
+            <p class="tagline">a little birthday page made with love ♡</p>
+            <h1>Happy Birthday,<br><span>My Favorite Person Salsa Aulia Sabarani</span> 🎂</h1>
+            <p>
+                Hari ini bukan cuma tentang bertambahnya usia,
+                tapi tentang merayakan seseorang yang begitu berarti.
+            </p>
+        </section>
 
-        <div class="cat-container">
-            <div class="cat">
-                <div class="cat-body">
-                    <div class="cat-head">
-                        <div class="cat-ear cat-ear-left"></div>
-                        <div class="cat-ear cat-ear-right"></div>
-                        <div class="cat-eye cat-eye-left"></div>
-                        <div class="cat-eye cat-eye-right"></div>
-                        <div class="cat-mouth"></div>
-                    </div>
-                    <div class="cat-body-main"></div>
-                    <div class="cat-tail"></div>
-                </div>
+        <!-- BAGIAN 2: FOTO / ILUSTRASI -->
+        <section>
+            <div class="img-container">
+                <!-- Ganti nama file gambar di bawah sesuai nama foto yang kamu upload ke GitHub -->
+                <img src="foto.jpg" alt="Foto Salsa Aulia Sabarani">
             </div>
-        </div>
+        </section>
 
-        <div class="message">
-            <span class="sparkle">✨</span>
-            Selamat ulang tahun untuk orang yang paling special di hidupku.<br><br>
-            Setiap hari bersama kamu adalah anugerah yang tak ternilai. 
-            Terima kasih sudah membuat hidupku penuh warna, tawa, dan cinta.<br><br>
-            Semoga hari istimewamu dipenuhi kebahagiaan, dan semoga tahun ini 
-            membawamu lebih dekat pada semua impian indahmu.<br><br>
-            Aku cinta kamu... selamanya! 💕
-            <span class="sparkle">✨</span>
-        </div>
+        <!-- BAGIAN 3: UCAPAN & DOA -->
+        <section>
+            <span class="heart-icon">♡</span>
+            <h2>For You, Birthday Girl</h2>
 
-        <button class="button" onclick="celebrate()">🎉 Rayakan!</button>
+            <p>Happy birthday, sayang! 🤍</p>
 
-        <div class="footer">
-            Dengan segala cinta,<br>
-            Dari orang yang sangat mencintaimu 💕
-        </div>
-    </div>
+            <p>
+                Semoga di usia yang baru ini, semua hal baik datang
+                satu per satu ke hidup kamu. Semoga langkah kamu selalu
+                dimudahkan, impian-impian kamu perlahan menjadi nyata,
+                dan kamu selalu punya alasan untuk tersenyum setiap hari.
+            </p>
 
-    <script>
-        function celebrate() {
-            // Confetti effect
-            for (let i = 0; i < 50; i++) {
-                const confetti = document.createElement('div');
-                confetti.innerHTML = '🎉';
-                confetti.style.position = 'fixed';
-                confetti.style.left = Math.random() * window.innerWidth + 'px';
-                confetti.style.top = '-20px';
-                confetti.style.fontSize = '2em';
-                confetti.style.pointerEvents = 'none';
-                document.body.appendChild(confetti);
+            <p>
+                Terima kasih sudah menjadi seseorang yang begitu spesial.
+                Jangan pernah lupa kalau kamu pantas mendapatkan banyak
+                hal baik, banyak kebahagiaan, dan banyak cinta.
+            </p>
 
-                let top = -20;
-                const interval = setInterval(() => {
-                    top += Math.random() * 5 + 2;
-                    confetti.style.top = top + 'px';
-                    confetti.style.left = (parseFloat(confetti.style.left) + Math.random() * 4 - 2) + 'px';
-                    
-                    if (top > window.innerHeight) {
-                        clearInterval(interval);
-                        confetti.remove();
-                    }
-                }, 20);
-            }
-        }
-    </script>
+            <p>
+                I hope this new chapter of your life is softer, happier,
+                and filled with beautiful little moments.
+                Keep being the wonderful person that you are. 🌷
+            </p>
+
+            <p>
+                Once again, happy birthday to my favorite girl. ♡<br>
+                Semoga hari ini seindah senyum kamu.
+            </p>
+        </section>
+
+        <!-- BAGIAN 4: VIDEO -->
+        <section>
+            <p class="tagline">a little something for you 🎀</p>
+            <h2>Birthday Video</h2>
+            <p>
+                Aku harap lirik lagu ini bisa jelasin ke ayang tentang perasaan ku untuk ayang.
+            </p>
+
+            <div class="video-container">
+                <!-- Ganti nama file video di bawah sesuai nama video yang kamu upload ke GitHub -->
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Browser kamu tidak mendukung pemutaran video.
+                </video>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>made especially for you ♡</p>
+            <p class="name">Salsa Aulia Sabarani</p>
+        </footer>
+    </main>
+
 </body>
 </html>
